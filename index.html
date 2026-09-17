@@ -161,6 +161,33 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 .zhang-source-links a{font-size:13px;font-weight:800;text-decoration:none;padding:7px 9px;border-radius:999px;background:#f5f8fa;border:1px solid #e3e9ec;color:#225f8c}
 @media(max-width:580px){.time-row{grid-template-columns:88px 1fr}.plan-switch{width:100%}.plan-tab{flex:1}}
 
+
+/* Detailed plan accordions */
+.detailed-day{padding:0!important;overflow:hidden}
+.detailed-day>summary.detailed-day-summary{
+  list-style:none;cursor:pointer;padding:16px 17px;display:grid;
+  grid-template-columns:170px 100px 1fr 30px;gap:12px;align-items:center;
+  color:var(--ink)
+}
+.detailed-day>summary.detailed-day-summary::-webkit-details-marker{display:none}
+.detailed-day>summary.detailed-day-summary:after{
+  content:"＋";display:grid;place-items:center;width:28px;height:28px;border-radius:9px;
+  background:rgba(255,255,255,.72);font-size:18px;font-weight:900
+}
+.detailed-day[open]>summary.detailed-day-summary:after{content:"−"}
+.detail-date{font-weight:900}
+.detail-dayno{font-size:13px;font-weight:850;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.detail-place{font-weight:900}
+.detailed-day .timeline{padding:0 17px 16px;border-top:1px solid rgba(23,50,77,.08)}
+.detailed-day .timeline .time-row:first-child{margin-top:12px}
+@media(max-width:700px){
+  .detailed-day>summary.detailed-day-summary{grid-template-columns:1fr auto;gap:6px 10px}
+  .detail-date{grid-column:1}
+  .detail-dayno{grid-column:1}
+  .detail-place{grid-column:1}
+  .detailed-day>summary.detailed-day-summary:after{grid-column:2;grid-row:1/4}
+}
+
 </style></head><body><nav class="top"><div class="w nav"><a href="#route">Маршрут</a><a href="#beijing">Пекин</a><a href="#zhang">Чжанцзяцзе</a><a href="#hainan">Хайнань</a><a href="#shanghai">Шанхай</a><div class="navdrop"><button class="navdrop-btn" type="button" aria-expanded="false">План поездки ▾</button><div class="navdrop-menu"><a href="#days">По дням</a><a href="#moves">Передвижения</a><a href="#hotels">Отели</a></div></div><a href="#budget">Бюджет</a><a href="#checklist">Чек‑лист</a></div></nav><header class="hero"><div class="w"><div>🇨🇳 9–24 октября 2026 · семейное путешествие</div><h1><span class="china">Китай</span><span class="family">Путешествие семьи Куликовых</span></h1><div class="hero-date">Октябрь 2026</div><p class="lead">Большое семейное путешествие по Китаю: императорский Пекин, фантастические горы Чжанцзяцзе, тёплое море Хайнаня и яркий Шанхай. Собираем здесь всё, что поможет прожить эти две недели красиво, спокойно и с удовольствием.</p><div class="chips"><span class="chip">Пекин · 2 ночи</span><span class="chip">Улинъюань · 3 ночи</span><span class="chip">Санья · 6 ночей</span><span class="chip">Шанхай · 3 ночи</span></div></div></header><main><section id="route"><div class="w"><div class="head"><h2>Маршрут</h2><p>Клик по плитке открывает подробный раздел остановки.</p></div><div class="banner">Москва → Пекин → Чжанцзяцзе / Улинъюань → Хайкоу → Санья → Шанхай → Москва</div><div class="stops"><a class="stop" href="#beijing"><b>Пекин</b><span>10–12 октября · 2 ночи</span><em>История + Мутяньюй →</em></a><a class="stop" href="#zhang"><b>Чжанцзяцзе</b><span>12–15 октября · 3 ночи</span><em>Улинъюань + Тяньмэньшань →</em></a><a class="stop" href="#hainan"><b>Хайнань</b><span>15–21 октября · 6 ночей</span><em>Хайкоу → Санья, море →</em></a><a class="stop" href="#shanghai"><b>Шанхай</b><span>21–24 октября · 3 ночи</span><em>Город + Disneyland →</em></a></div></div></section><section id="beijing"><div class="w"><div class="head"><h2>Пекин</h2><p>10–12 октября · 2 ночи.</p></div><div class="city-layout"><div class="city-left"><div class="city-photo"><img src="https://images.unsplash.com/photo-1769276659391-34ed973000cc?auto=format&fit=crop&q=82&w=1200" alt="Пекин"><b>Пекин · 北京</b></div><div class="city-hotel"><h3>🏨 Отель</h3><p>Кандидаты: Sunworld Wangfujing или Nostalgia S Qianmen. Нужен семейный номер на троих, удобное расположение для исторического центра и нормальный ранний завтрак.</p><a href="#hotels">К вариантам отелей ↓</a></div></div><div class="city-right"><details class="city-intro" open><summary><span>Императорская столица и старый Китай</span><small>описание места</small></summary><div class="city-intro-body"><p>Пекин — город огромного масштаба, где императорская история соседствует с современной столицей. Здесь особенно хорошо чувствуется логика старого Китая: ось города, дворцы, ворота, площади и парки выстроены как единая система.</p><p>Для первой остановки Пекин удобен ещё и тем, что за короткое время можно увидеть сразу две очень разные стороны страны: монументальный исторический центр и Великую Китайскую стену за пределами города.</p><div class="meta"><span>2 ночи</span><span>исторический центр</span><span>Великая Китайская стена</span><span>русскоязычный гид</span></div><div class="city-links"><a href="https://ru.wikipedia.org/wiki/Пекин" target="_blank">Пекин ↗</a><a href="https://ru.wikipedia.org/wiki/Запретный_город" target="_blank">Запретный город ↗</a><a href="https://en.wikipedia.org/wiki/Mutianyu" target="_blank">Мутяньюй ↗</a></div></div></details><div class="city-middle"><div class="city-transport"><h3>✈️ Аэропорт и транспорт</h3><p><b>Прилёт:</b> PKX → центр Пекина.</p><p style="margin-top:8px"><b>Выезд к стене:</b> машина с багажом по маршруту отель → Мутяньюй → PEK, без возврата в город.</p><p style="margin-top:8px"><b>Дальше:</b> вечерний рейс PEK → DYG.</p></div><div class="city-exc"><h3>🎟️ Экскурсии и места</h3><div class="city-exc-list"><div class="city-exc-item"><b>Исторический Пекин</b><span>Мавзолей Мао → площадь Тяньаньмэнь → Запретный город → Цзиншань по силам и времени.</span></div><div class="city-exc-item"><b>Мутяньюй</b><span>Великая Китайская стена: канатная дорога, прогулка по стене и спуск на тобоггане по желанию.</span></div><div class="city-exc-item"><b>Ритм дня</b><span>Экскурсию и обед на Мутяньюе заканчиваем до 15:00, чтобы спокойно ехать в PEK.</span></div></div></div></div></div></div></div></section><section id="zhang"><div class="w"><div class="head"><h2>Чжанцзяцзе / Улинъюань</h2><p>12–15 октября · 3 ночи.</p></div><div class="city-layout"><div class="city-left"><div class="city-photo"><img src="https://images.unsplash.com/photo-1561031454-4f1331bd2a34?auto=format&fit=crop&q=82&w=1200" alt="Чжанцзяцзе"><b>Чжанцзяцзе · 张家界</b></div><div class="city-hotel"><h3>🏨 Отель</h3><p>Все 3 ночи живём в Улинъюане, чтобы быть ближе к национальному парку. Конкретный отель ещё выбираем.</p></div></div><div class="city-right"><details class="city-intro" open><summary><span>Горы, которые выглядят нереально</span><small>описание места</small></summary><div class="city-intro-body"><p>Чжанцзяцзе — тот самый Китай с вертикальными каменными столбами, облаками между вершинами и тропами, которые буквально висят над пропастью. Самая удобная база для знакомства с этим районом — Улинъюань: отсюда проще попадать в национальный парк, а вечером можно спокойно вернуться в район с отелями, кафе и привычной городской инфраструктурой.</p><p>У этого места две совершенно разные стороны: природный парк с тысячами скальных пиков и Тяньмэньшань — отдельная гора с одной из самых длинных канатных дорог, стеклянными тропами и знаменитой аркой «Небесные врата».</p><div class="meta"><span>3 ночи</span><span>база — Улинъюань</span><span>горы и панорамные маршруты</span><span>подъёмники и канатные дороги</span></div><div class="city-links"><a href="https://ru.wikipedia.org/wiki/Чжанцзяцзе" target="_blank">Чжанцзяцзе ↗</a><a href="https://ru.wikipedia.org/wiki/Улинъюань" target="_blank">Улинъюань ↗</a><a href="https://en.wikipedia.org/wiki/Tianmen_Mountain" target="_blank">Тяньмэньшань ↗</a></div></div></details><div class="city-middle"><div class="city-transport"><h3>✈️ Аэропорт и транспорт</h3><p><b>Прилёт:</b> DYG вечером → трансфер в Улинъюань.</p><p style="margin-top:8px"><b>Тяньмэньшань:</b> отдельный ранний выезд из Улинъюаня.</p><p style="margin-top:8px"><b>Вылет:</b> Улинъюань → DYG примерно 08:15–08:30.</p></div><div class="city-exc"><h3>🎟️ Экскурсии и места</h3><div class="city-exc-list"><div class="city-exc-item"><b>Национальный лесной парк</b><span>Лифт Байлун → Юаньцзяцзе → гора «Аллилуйя» → Первый мост Поднебесной → гора Тяньцзы.</span></div><div class="city-exc-item"><b>Тяньмэньшань</b><span>Канатная дорога → стеклянные тропы → Небесные врата → 999 ступеней.</span></div><div class="city-exc-item"><b>Баофэн · опционально</b><span>Только если закончим Тяньмэньшань вовремя, будет хорошая погода и останутся силы.</span></div></div></div></div><details class="zhang-deep"><summary>Полная организация Чжанцзяцзе / Улинъюаня <small>отель · такси · входы · билеты · маршруты</small></summary><div class="zhang-deep-body">
 <h4>Рабочий отель</h4>
 <p><b>IBIS Hotel — 100 Meters to East Entrance of Zhangjiajie National Forest Park.</b> В актуальном поиске Booking.com на 12–15 октября 2026 для 2 взрослых и ребёнка 13 лет был доступен вариант примерно за 21 378 ₽ за 3 ночи с завтраком. Есть семейные номера, заявленное расстояние около 100 м до East Entrance. Это пока рабочий выбор, не бронь.</p>
@@ -254,12 +281,12 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="day shanghai"><strong>24 окт · сб</strong><p><b>Шанхай → Москва.</b> Выезд около 04:00–04:15; PVG 08:05 → TAO → SVO 18:35.</p></div>
 </div></div>
 <div class="plan-panel" data-plan-panel="detail" hidden><div class="detailed-days">
-<div class="detailed-day travel"><h3>9 октября · пятница · Ярославль → Москва → Китай</h3><div class="timeline">
+<details class="detailed-day travel"><summary class="detailed-day-summary"><span class="detail-date">9 октября · пятница</span><span class="detail-dayno">День 1</span><span class="detail-place">Ярославль → Москва → Китай</span></summary><div class="timeline">
 <div class="time-row"><time>14:00–14:30</time><div>Выезд из Ярославля в сторону Шереметьево с большим запасом.</div></div>
 <div class="time-row"><time>18:45–19:00</time><div>Быть в <b>Шереметьево (SVO)</b>: регистрация, багаж, контроль.</div></div>
 <div class="time-row"><time>21:55</time><div>Вылет Москва → Урумчи → Пекин.</div></div>
-</div></div>
-<div class="detailed-day beijing"><h3>10 октября · суббота · Пекин</h3><div class="timeline">
+</div></details>
+<details class="detailed-day beijing"><summary class="detailed-day-summary"><span class="detail-date">10 октября · суббота</span><span class="detail-dayno">День 2</span><span class="detail-place">Пекин</span></summary><div class="timeline">
 <div class="time-row"><time>13:45</time><div>Прилёт в <b>Пекин Дасин (PKX)</b>.</div></div>
 <div class="time-row"><time>13:45–15:15</time><div>Паспортный контроль, багаж, при необходимости связь / Alipay.</div></div>
 <div class="time-row"><time>15:15–16:15</time><div>Такси / Didi в центр.</div></div>
@@ -267,8 +294,8 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>16:30–17:30</time><div>Поздний обед.</div></div>
 <div class="time-row"><time>18:00–20:00</time><div>Спокойная прогулка рядом с отелем без полноценной экскурсии.</div></div>
 <div class="time-row"><time>~21:00</time><div>Отдых.</div></div>
-</div></div>
-<div class="detailed-day beijing"><h3>11 октября · воскресенье · Исторический Пекин</h3><div class="timeline">
+</div></details>
+<details class="detailed-day beijing"><summary class="detailed-day-summary"><span class="detail-date">11 октября · воскресенье</span><span class="detail-dayno">День 3</span><span class="detail-place">Исторический Пекин</span></summary><div class="timeline">
 <div class="time-row"><time>06:30</time><div>Завтрак.</div></div>
 <div class="time-row"><time>07:15–07:30</time><div>Выход с русскоязычным гидом.</div></div>
 <div class="time-row"><time>~08:00</time><div>Мавзолей Мао / зона Тяньаньмэнь.</div></div>
@@ -278,8 +305,8 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>15:00–16:00</time><div>Парк Цзиншань, если хватает сил.</div></div>
 <div class="time-row"><time>16:30–17:30</time><div>Возвращение в отель и отдых.</div></div>
 <div class="time-row"><time>18:30</time><div>Ужин.</div></div>
-</div></div>
-<div class="detailed-day beijing"><h3>12 октября · понедельник · Мутяньюй → Чжанцзяцзе</h3><div class="timeline">
+</div></details>
+<details class="detailed-day beijing"><summary class="detailed-day-summary"><span class="detail-date">12 октября · понедельник</span><span class="detail-dayno">День 4</span><span class="detail-place">Мутяньюй → Чжанцзяцзе</span></summary><div class="timeline">
 <div class="time-row"><time>06:30</time><div>Завтрак, сдаём номер; чемоданы сразу в машину.</div></div>
 <div class="time-row"><time>~07:15</time><div>Отель → Мутяньюй.</div></div>
 <div class="time-row"><time>08:45–09:00</time><div>Прибытие на Мутяньюй.</div></div>
@@ -291,8 +318,8 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>21:45–22:15</time><div>Получение багажа.</div></div>
 <div class="time-row"><time>22:15–23:05</time><div>Такси DYG → Улинъюань.</div></div>
 <div class="time-row"><time>~23:00</time><div>Заселение и сон.</div></div>
-</div></div>
-<div class="detailed-day zhang"><h3>13 октября · вторник · National Forest Park</h3><div class="timeline">
+</div></details>
+<details class="detailed-day zhang"><summary class="detailed-day-summary"><span class="detail-date">13 октября · вторник</span><span class="detail-dayno">День 5</span><span class="detail-place">Улинъюань · National Forest Park</span></summary><div class="timeline">
 <div class="time-row"><time>06:20–06:50</time><div>Завтрак.</div></div>
 <div class="time-row"><time>~06:55</time><div>Пешком к Восточному входу.</div></div>
 <div class="time-row"><time>07:00–07:15</time><div>Вход в парк.</div></div>
@@ -306,8 +333,8 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>15:20–16:00</time><div>Eco-bus обратно к East Gate.</div></div>
 <div class="time-row"><time>16:15–16:45</time><div>Отель.</div></div>
 <div class="time-row"><time>18:00–19:00</time><div>Ужин рядом с East Gate.</div></div>
-</div></div>
-<div class="detailed-day zhang"><h3>14 октября · среда · Tianmen Mountain</h3><div class="timeline">
+</div></details>
+<details class="detailed-day zhang"><summary class="detailed-day-summary"><span class="detail-date">14 октября · среда</span><span class="detail-dayno">День 6</span><span class="detail-place">Тяньмэньшань · Чжанцзяцзе</span></summary><div class="timeline">
 <div class="time-row"><time>06:15</time><div>Завтрак.</div></div>
 <div class="time-row"><time>~06:45</time><div>Такси Улинъюань → Tianmen Mountain Cableway Lower Station.</div></div>
 <div class="time-row"><time>~07:30</time><div>Вход по заранее выбранному слоту.</div></div>
@@ -317,8 +344,8 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>14:00–14:50</time><div>Такси обратно в Улинъюань.</div></div>
 <div class="time-row"><time>после 15:00</time><div><b>Baofeng Lake</b> только если хорошая погода, есть силы и Tianmen закончили вовремя. Иначе отдых.</div></div>
 <div class="time-row"><time>~18:30</time><div>Ужин.</div></div>
-</div></div>
-<div class="detailed-day hainan"><h3>15 октября · четверг · Чжанцзяцзе → Хайкоу → Санья</h3><div class="timeline">
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">15 октября · четверг</span><span class="detail-dayno">День 7</span><span class="detail-place">Чжанцзяцзе → Хайкоу → Санья</span></summary><div class="timeline">
 <div class="time-row"><time>~06:45</time><div>Завтрак.</div></div>
 <div class="time-row"><time>07:45</time><div>Сдаём номер.</div></div>
 <div class="time-row"><time>08:15–08:30</time><div>Такси Улинъюань → DYG.</div></div>
@@ -329,15 +356,43 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>~15:00–17:00</time><div>Скоростной поезд до Саньи; точный поезд выберем после покупки авиабилета.</div></div>
 <div class="time-row"><time>~17:15–18:00</time><div>Такси → Sanya Conifer Resort.</div></div>
 <div class="time-row"><time>18:00–19:00</time><div>Заселение и ужин.</div></div>
-</div></div>
-<div class="detailed-day hainan"><h3>16–20 октября · Санья · пять полных дней отдыха</h3><div class="timeline">
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">16 октября · пятница</span><span class="detail-dayno">День 8</span><span class="detail-place">Санья · Sanya Conifer Resort</span></summary><div class="timeline">
 <div class="time-row"><time>08:00–09:00</time><div>Завтрак.</div></div>
 <div class="time-row"><time>09:30–13:00</time><div>Пляж / бассейн / море.</div></div>
 <div class="time-row"><time>13:00–15:00</time><div>Лёгкий обед и отдых.</div></div>
 <div class="time-row"><time>15:00–18:00</time><div>Пляж / rooftop pool / прогулка.</div></div>
 <div class="time-row"><time>18:30–20:00</time><div>Ужин по полупансиону.</div></div>
-</div></div>
-<div class="detailed-day shanghai"><h3>21 октября · среда · Санья → Шанхай</h3><div class="timeline">
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">17 октября · суббота</span><span class="detail-dayno">День 9</span><span class="detail-place">Санья · Sanya Conifer Resort</span></summary><div class="timeline">
+<div class="time-row"><time>08:00–09:00</time><div>Завтрак.</div></div>
+<div class="time-row"><time>09:30–13:00</time><div>Пляж / бассейн / море.</div></div>
+<div class="time-row"><time>13:00–15:00</time><div>Лёгкий обед и отдых.</div></div>
+<div class="time-row"><time>15:00–18:00</time><div>Пляж / rooftop pool / прогулка.</div></div>
+<div class="time-row"><time>18:30–20:00</time><div>Ужин по полупансиону.</div></div>
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">18 октября · воскресенье</span><span class="detail-dayno">День 10</span><span class="detail-place">Санья · Sanya Conifer Resort</span></summary><div class="timeline">
+<div class="time-row"><time>08:00–09:00</time><div>Завтрак.</div></div>
+<div class="time-row"><time>09:30–13:00</time><div>Пляж / бассейн / море.</div></div>
+<div class="time-row"><time>13:00–15:00</time><div>Лёгкий обед и отдых.</div></div>
+<div class="time-row"><time>15:00–18:00</time><div>Пляж / rooftop pool / прогулка.</div></div>
+<div class="time-row"><time>18:30–20:00</time><div>Ужин по полупансиону.</div></div>
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">19 октября · понедельник</span><span class="detail-dayno">День 11</span><span class="detail-place">Санья · Sanya Conifer Resort</span></summary><div class="timeline">
+<div class="time-row"><time>08:00–09:00</time><div>Завтрак.</div></div>
+<div class="time-row"><time>09:30–13:00</time><div>Пляж / бассейн / море.</div></div>
+<div class="time-row"><time>13:00–15:00</time><div>Лёгкий обед и отдых.</div></div>
+<div class="time-row"><time>15:00–18:00</time><div>Пляж / rooftop pool / прогулка.</div></div>
+<div class="time-row"><time>18:30–20:00</time><div>Ужин по полупансиону.</div></div>
+</div></details>
+<details class="detailed-day hainan"><summary class="detailed-day-summary"><span class="detail-date">20 октября · вторник</span><span class="detail-dayno">День 12</span><span class="detail-place">Санья · Sanya Conifer Resort</span></summary><div class="timeline">
+<div class="time-row"><time>08:00–09:00</time><div>Завтрак.</div></div>
+<div class="time-row"><time>09:30–13:00</time><div>Пляж / бассейн / море.</div></div>
+<div class="time-row"><time>13:00–15:00</time><div>Лёгкий обед и отдых.</div></div>
+<div class="time-row"><time>15:00–18:00</time><div>Пляж / rooftop pool / прогулка.</div></div>
+<div class="time-row"><time>18:30–20:00</time><div>Ужин по полупансиону.</div></div>
+</div></details>
+<details class="detailed-day shanghai"><summary class="detailed-day-summary"><span class="detail-date">21 октября · среда</span><span class="detail-dayno">День 13</span><span class="detail-place">Санья → Шанхай</span></summary><div class="timeline">
 <div class="time-row"><time>08:00</time><div>Завтрак.</div></div>
 <div class="time-row"><time>~09:50</time><div>Выезд из Conifer.</div></div>
 <div class="time-row"><time>~10:20</time><div>Санья Феникс (SYX).</div></div>
@@ -345,24 +400,24 @@ mask-image:linear-gradient(to bottom,rgba(0,0,0,.55),transparent 78%);
 <div class="time-row"><time>16:00–16:45</time><div>Получение багажа.</div></div>
 <div class="time-row"><time>17:00–18:00</time><div>Такси в центр.</div></div>
 <div class="time-row"><time>~18:00</time><div>Заселение.</div></div>
-</div></div>
-<div class="detailed-day shanghai"><h3>22 октября · четверг · Шанхай с Женей</h3><div class="timeline">
+</div></details>
+<details class="detailed-day shanghai"><summary class="detailed-day-summary"><span class="detail-date">22 октября · четверг</span><span class="detail-dayno">День 14</span><span class="detail-place">Шанхай · Старый город → Вайтань → Пудун</span></summary><div class="timeline">
 <div class="time-row"><time>~08:00</time><div>Завтрак.</div></div>
-<div class="time-row"><time>~09:30–15:30</time><div>Индивидуальная экскурсия: Старый город → Юйюань → Вайтань → Пудун / Луцзяцзуй + обед.</div></div>
+<div class="time-row"><time>~09:30–15:30</time><div>Индивидуальная экскурсия с Женей: Старый город → Юйюань → Вайтань → Пудун / Луцзяцзуй + обед.</div></div>
 <div class="time-row"><time>вечер</time><div>Свободная прогулка.</div></div>
-</div></div>
-<div class="detailed-day shanghai"><h3>23 октября · пятница · Shanghai Disneyland</h3><div class="timeline">
+</div></details>
+<details class="detailed-day shanghai"><summary class="detailed-day-summary"><span class="detail-date">23 октября · пятница</span><span class="detail-dayno">День 15</span><span class="detail-place">Shanghai Disneyland</span></summary><div class="timeline">
 <div class="time-row"><time>06:30–07:00</time><div>Ранний завтрак.</div></div>
 <div class="time-row"><time>~07:15</time><div>Выезд.</div></div>
 <div class="time-row"><time>весь день</time><div>Shanghai Disneyland.</div></div>
 <div class="time-row"><time>вечер</time><div>Возвращение в отель.</div></div>
-</div></div>
-<div class="detailed-day shanghai"><h3>24 октября · суббота · Шанхай → Москва</h3><div class="timeline">
+</div></details>
+<details class="detailed-day shanghai"><summary class="detailed-day-summary"><span class="detail-date">24 октября · суббота</span><span class="detail-dayno">День 16</span><span class="detail-place">Шанхай → Москва</span></summary><div class="timeline">
 <div class="time-row"><time>04:00–04:15</time><div>Выезд из отеля.</div></div>
 <div class="time-row"><time>05:00–05:15</time><div>Быть в PVG.</div></div>
 <div class="time-row"><time>08:05</time><div>Шанхай → Циндао → Москва.</div></div>
 <div class="time-row"><time>18:35</time><div>Прилёт в SVO; далее паспортный контроль и багаж.</div></div>
-</div></div>
+</div></details>
 </div></div></div></section><section id="moves"><div class="w"><div class="head"><h2>Передвижения</h2><p>Все времена местные. Для вылетов указано, к какому времени лучше уже быть в аэропорту; после прилёта — ориентир на получение багажа.</p></div><div class="table"><table><tr><th>Дата</th><th>Маршрут</th><th>Рейс</th><th>Быть в аэропорту</th><th>После прилёта</th></tr>
 <tr><td>9 окт</td><td><b>Москва, Шереметьево (SVO)</b> → Урумчи, Дивопу (URC) → <b>Пекин, Дасин (PKX)</b></td><td>21:55 → 13:45 +1<br><span class="sub">1 пересадка</span></td><td><b>SVO: 18:45–19:00</b><br><span class="sub">≈3 часа до международного вылета</span></td><td><b>PKX: багаж ≈30–45 мин</b><br><span class="sub">С паспортным контролем и выходом из терминала разумно закладывать 60–90 мин после посадки.</span></td></tr>
 <tr><td>12 окт</td><td><b>Пекин, Шоуду / Capital (PEK)</b> → <b>Чжанцзяцзе, Хэхуа (DYG)</b></td><td>19:15 → 21:45<br><span class="sub">прямой</span></td><td><b>PEK: 16:15–16:30</b><br><span class="sub">Запас больше стандартного: приезжаем прямо с Мутяньюя.</span></td><td><b>DYG: багаж ≈20–30 мин</b><br><span class="sub">Далее трансфер в Улинъюань.</span></td></tr>
